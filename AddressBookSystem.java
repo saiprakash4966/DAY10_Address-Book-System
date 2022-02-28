@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class AddressBookSystem
 {
+
 	public static void main(String[]args)
 	{
 		
@@ -43,6 +44,7 @@ public class AddressBookSystem
 		DN.readDataNew(DN);
 		DN.editUser(DN);
 		DN.edit(DN);
+		DN.delete(DN);
 		}
 		
 	}
@@ -88,7 +90,7 @@ class DataNew
      }
 	public void edit(DataNew DN) {
 		Scanner sc1=new Scanner(System.in);
-		System.out.println("Edit firstName :");
+		System.out.println("Edit firstName ");
 		DN.NewPerson_firstName=sc1.nextLine();
 		System.out.println(" Edit lastName");
 		DN.NewPerson_lastName=sc1.nextLine();
@@ -105,4 +107,28 @@ class DataNew
 		DN.NewPerson_state=sc1.nextLine();
 		
 		
-		}}	
+		}
+	public void delete(DataNew DN) 
+	{
+		Scanner sc2=new Scanner(System.in);
+		System.out.println("Delete firstName ");
+		DN.NewPerson_firstName=sc2.nextLine();
+		System.out.println(" Delete lastName");
+		DN.NewPerson_lastName=sc2.nextLine();
+		System.out.println(" Delete Address");
+		DN.NewPerson_address=sc2.nextLine();
+		System.out.println(" Delete email");
+		DN.NewPerson_email=sc2.nextLine();
+		
+		System.out.println(" Delete zip");
+		DN.NewPerson_zip=sc2.nextLine();
+		System.out.println(" Delete city");
+		DN.NewPerson_city=sc2.nextLine();
+		System.out.println(" Delete State");
+		DN.NewPerson_state=sc2.nextLine();
+		
+		
+	}
+	
+	
+	}
